@@ -1,3 +1,4 @@
+  
 function main() {
   // Get the "my-box" div from the document
   // When someone clicks on the element then change the background color
@@ -7,7 +8,13 @@ function main() {
   
 
   myBox.addEventListener('click', event => {
-    myBox.style.backgroundColor = 'red';
+      
+    if (myBox.style.backgroundColor == 'red') {
+        myBox.style.backgroundColor = 'black';
+    }
+    else {
+      myBox.style.backgroundColor = 'red';
+    }
   })
 }
 
